@@ -1,38 +1,26 @@
 //calculator.cpp
 //holds calculator class
-#include CALCULATOR_H
-#include <iostream>
-class Calculator{
-public:
-  float add(float a, float b){
+#include "calculator.h"
+  float Calculator :: add(float a, float b){
     return a+b;
   }
-  float subtract(float a, float b){
+  float Calculator :: subtract(float a, float b){
     return a-b;
   }
-  float multiply(float a, float b){
+  float Calculator :: multiply(float a, float b){
     return a*b;
   }
-  float divide(float a, float b){
-    try{
-      if(b == 0.0){
-        throw(1);
-      }
-    }
-    catch{
-      std::cout << "Can't divide by 0" << endl;
-      exit(1);
-    }
+  float Calculator :: divide(float a, float b){
     return a/b;
   }
-  float exponent(float a, int b){
+  float Calculator :: exponent(float a, int b){
     float value = 1.0;
     for(int i = 0; i < b; i++){
       value = value * a;
     }
     return value;
   }
-  int factorial (int a){
+  int Calculator :: factorial (int a){
     if (a == 0){
       return 1;
     }
@@ -40,5 +28,3 @@ public:
       return a * factorial(a-1);
     }
   }
-
-};

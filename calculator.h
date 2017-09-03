@@ -1,8 +1,10 @@
 #ifndef CALCULATOR_H
 #define CALCULATOR_H
+#include <iostream>
 class Calculator{
-  float add(float, float);
-  float subtract(float, float);
+public:
+  float add(float a, float b);
+  float subtract(float a, float b);
   float multiply(float, float);
   float divide(float, float);
   float exponent(float, int);

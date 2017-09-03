@@ -1,3 +1,4 @@
+//some simple unit tests for our calculator
 #include "calculator.h"
 #include <iostream>
 
@@ -18,6 +19,13 @@ void subTest(){
   if(expected != actual){
     cout << "subTest failed"<< endl;
   }
+}
+void exponentTest(){
+  float expected = 27.0;
+  float actual = calc.exponent(3, 3);
+  if(expected != actual){
+    cout << "exponentTest failed"<< endl;
+  }  
 }
 void factorialTest(){
   int expected = 120;
