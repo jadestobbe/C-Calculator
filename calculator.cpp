@@ -1,5 +1,6 @@
 //calculator.cpp
 //holds calculator class
+#include CALCULATOR_H
 #include <iostream>
 class Calculator{
 public:
